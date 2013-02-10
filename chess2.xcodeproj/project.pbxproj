@@ -28,6 +28,7 @@
 		A5FC3AF216C53F2700D75225 /* C2BoardState.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AF116C53F2700D75225 /* C2BoardState.m */; };
 		A5FC3AF516C53F8600D75225 /* C2Move.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AF416C53F8600D75225 /* C2Move.m */; };
 		A5FC3AF816C5419700D75225 /* C2Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AF716C5419600D75225 /* C2Knight.m */; };
+		A5FC3AFB16C812D100D75225 /* C2Board.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AFA16C812D100D75225 /* C2Board.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		A5FC3AF416C53F8600D75225 /* C2Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Move.m; sourceTree = "<group>"; };
 		A5FC3AF616C5419600D75225 /* C2Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Knight.h; sourceTree = "<group>"; };
 		A5FC3AF716C5419600D75225 /* C2Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Knight.m; sourceTree = "<group>"; };
+		A5FC3AF916C812D100D75225 /* C2Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Board.h; sourceTree = "<group>"; };
+		A5FC3AFA16C812D100D75225 /* C2Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Board.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				A5FC3ABE16C53DEC00D75225 /* C2AppDelegate.h */,
 				A5FC3ABF16C53DEC00D75225 /* C2AppDelegate.m */,
 				A5FC3AC716C53DEC00D75225 /* MainStoryboard_iPhone.storyboard */,
+				A5FC3AF916C812D100D75225 /* C2Board.h */,
+				A5FC3AFA16C812D100D75225 /* C2Board.m */,
 				A5FC3ACA16C53DEC00D75225 /* MainStoryboard_iPad.storyboard */,
 				A5FC3ACD16C53DEC00D75225 /* C2ViewController.h */,
 				A5FC3ACE16C53DEC00D75225 /* C2ViewController.m */,
@@ -302,6 +307,7 @@
 				A5FC3AF216C53F2700D75225 /* C2BoardState.m in Sources */,
 				A5FC3AF516C53F8600D75225 /* C2Move.m in Sources */,
 				A5FC3AF816C5419700D75225 /* C2Knight.m in Sources */,
+				A5FC3AFB16C812D100D75225 /* C2Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

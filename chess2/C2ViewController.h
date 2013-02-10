@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "C2Board.h"
 
 @interface C2ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet C2Board *board;
 
 @end

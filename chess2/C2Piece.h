@@ -9,12 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "C2Move.h"
 
+// Sides
+#define WHITE 1
+#define BLACK 2
+
 /**
  * Abstract interface class for board pieces.
  */
 @interface C2Piece : NSObject
 
-@property (nonatomic, assign) CGPoint position;
+@property (atomic, assign) NSInteger side;     // WHITE or BLACK
+@property (atomic, assign) NSInteger position; // 0x88 board position
 
 /**
  * Return all possible moves this piece could make from its current position without
