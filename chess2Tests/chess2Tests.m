@@ -7,6 +7,8 @@
 //
 
 #import "chess2Tests.h"
+#import "C2BoardState.h"
+#import "C2Move.h"
 
 @implementation chess2Tests
 
@@ -24,17 +26,12 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in chess2Tests");
-}
-
 - (void)testClassicMovesInInitialBoardState
 {
 	C2BoardState* bs = [[C2BoardState alloc] initWithInitialState];
 	// WHITE
 	// Pawns
-	STAssertTrue([bs isLegalMove:[C2Move from:@"E2" to:@"E4"]]);
+	STAssertTrue([bs isLegalMove:[C2Move from:@"E2" to:@"E4"]], @"Pawns can go from start position");
 	// Knights
 	// Rooks
 	// Bishops
@@ -49,5 +46,12 @@
 	// King
 }
 
+- (void)testInvalidMovesInInitialBoardState
+{
+	C2BoardState* bs = [[C2BoardState alloc] initWithInitialState];
+	// WHITE
+	// Pawns
+	STAssertTrue([bs isLegalMove:[C2Move from:@"E2" to:@"E4"]], @"Pawns can go from start position");
+}
 
 @end

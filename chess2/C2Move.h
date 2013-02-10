@@ -20,6 +20,6 @@
 + (NSInteger)rankAndFileTo0x88:(NSString*)rankAndFile;
 
 // Construct a move from:"E2" to:"E4"
-+ (C2Move*)from:(NSString*)rankAndFile to:(NSString*)rankAndFile;
++ (C2Move*)from:(NSString*)from to:(NSString*)to;
 
 @end
