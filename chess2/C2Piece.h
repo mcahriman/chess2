@@ -21,6 +21,8 @@
 @property (atomic, assign) NSInteger side;     // WHITE or BLACK
 @property (atomic, assign) NSInteger position; // 0x88 board position
 
+- (C2Piece*)initWithColor:(int)color;
+
 /**
  * Return all possible moves this piece could make from its current position without
  * paying attention to the board state.

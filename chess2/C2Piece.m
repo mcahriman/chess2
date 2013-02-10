@@ -10,6 +10,12 @@
 
 @implementation C2Piece
 
+- (C2Piece*)initWithColor:(int)color;
+{
+	self.side = color;
+	return self;
+}
+
 - (NSArray*)pseudoLegalMoves;
 {
     return [[NSArray alloc] init];
