@@ -10,6 +10,11 @@
 
 @implementation C2Knight
 
+- (NSArray*)legalMoves;
+{
+    return [[NSArray alloc] init];
+}
+
 - (BOOL)canJumpOverOthers;
 {
 	return YES;

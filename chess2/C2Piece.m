@@ -10,6 +10,11 @@
 
 @implementation C2Piece
 
+- (NSArray*)pseudoLegalMoves;
+{
+    return [[NSArray alloc] init];
+}
+
 - (BOOL)canJumpOverOthers;
 {
 	return NO;

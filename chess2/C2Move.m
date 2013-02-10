@@ -20,7 +20,7 @@
 
 + (NSInteger)rankAndFileTo0x88:(NSString*)rankAndFile;
 {
-
+    return 0;
 }
 
 @end
