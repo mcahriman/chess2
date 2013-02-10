@@ -27,20 +27,24 @@
 	board[0][2] = board[0][5] = [[C2Bishop alloc] initWithColor:WHITE];
 	board[0][3] = [[C2Queen alloc] initWithColor:WHITE];
 	board[0][4] = [[C2King alloc] initWithColor:WHITE];
-	for (int file = 0; file < 8; ++file)
+	for (int file = 0; file < 8; ++file) {
 		board[1][file] = [[C2Pawn alloc] initWithColor:WHITE];
+	}
 
 	board[7][0] = board[7][7] = [[C2Rook alloc] initWithColor:BLACK];
 	board[7][1] = board[7][6] = [[C2Knight alloc] initWithColor:BLACK];
 	board[7][2] = board[7][5] = [[C2Bishop alloc] initWithColor:BLACK];
 	board[7][3] = [[C2Queen alloc] initWithColor:BLACK];
 	board[7][4] = [[C2King alloc] initWithColor:BLACK];
-	for (int file = 0; file < 8; ++file)
+	for (int file = 0; file < 8; ++file) {
 		board[6][file] = [[C2Pawn alloc] initWithColor:BLACK];
+	}
 
-	for (int rank = 2; rank < 6; ++rank)
-		for (int file = 0; file < 8; ++file)
+	for (int rank = 2; rank < 6; ++rank) {
+		for (int file = 0; file < 8; ++file) {
 			board[rank][file] = [[C2Empty alloc] init];
+		}
+	}
 
     return self;
 }
