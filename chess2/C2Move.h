@@ -8,11 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-// Represents a move from source square to target.
+//
+// Represents a move from source square to target in 0x88 board notation.
+//
 @interface C2Move : NSObject
 
-@property (nonatomic, assign) CGPoint from;
-@property (nonatomic, assign) CGPoint to;
-//todo: add setter=setFrom:(id) and allow passing in string like "A2" as well as coords (0,1)
+@property (nonatomic, assign) NSInteger from;
+@property (nonatomic, assign) NSInteger to;
+
+// Construct a 0x88 NSInteger from rankAndFile notation.
++ (NSInteger)rankAndFileTo0x88:(NSString*)rankAndFile;
+
+// Construct a moveFrom:"E2" to:"E4"
++ (C2Move*)moveFrom:(NSString*)rankAndFile to:(NSString*)rankAndFile;
 
 @end
