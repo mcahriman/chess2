@@ -18,6 +18,7 @@
  */
 @interface C2Piece : NSObject
 
+@property (nonatomic, retain) UIImage* image;
 @property (atomic, assign) NSInteger side;     // WHITE or BLACK
 @property (atomic, assign) NSInteger position; // 0x88 board position
 

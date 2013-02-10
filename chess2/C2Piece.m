@@ -8,7 +8,11 @@
 
 #import "C2Piece.h"
 
-@implementation C2Piece
+@implementation C2Piece {
+    UIImage* m_image;
+}
+
+@synthesize image = m_image;
 
 - (C2Piece*)initWithColor:(int)color;
 {
@@ -28,7 +32,8 @@
 
 - (void)drawAt:(CGPoint)location withSize:(CGSize)size;
 {
-    // dummy do-nothing
+    CGRect rect = {location, size};
+    [self.image drawInRect:rect];
 }
 
 @end
