@@ -162,7 +162,6 @@
 				A5FC3AF716C5419600D75225 /* C2Knight.m */,
 				A5FC3ABE16C53DEC00D75225 /* C2AppDelegate.h */,
 				A5FC3ABF16C53DEC00D75225 /* C2AppDelegate.m */,
-				A5FC3AC716C53DEC00D75225 /* MainStoryboard_iPhone.storyboard */,
 				A5FC3AF916C812D100D75225 /* C2Board.h */,
 				A5FC3AFA16C812D100D75225 /* C2Board.m */,
 				A5FC3AFC16C8180100D75225 /* C2Rook.h */,
@@ -177,9 +176,10 @@
 				A5FC3B0916C8184E00D75225 /* C2Empty.m */,
 				A5FC3B0B16C8187D00D75225 /* C2Pawn.h */,
 				A5FC3B0C16C8187D00D75225 /* C2Pawn.m */,
-				A5FC3ACA16C53DEC00D75225 /* MainStoryboard_iPad.storyboard */,
 				A5FC3ACD16C53DEC00D75225 /* C2ViewController.h */,
 				A5FC3ACE16C53DEC00D75225 /* C2ViewController.m */,
+				A5FC3AC716C53DEC00D75225 /* MainStoryboard_iPhone.storyboard */,
+				A5FC3ACA16C53DEC00D75225 /* MainStoryboard_iPad.storyboard */,
 				A5FC3AB616C53DEC00D75225 /* Supporting Files */,
 			);
 			path = chess2;
