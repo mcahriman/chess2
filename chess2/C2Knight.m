@@ -10,4 +10,9 @@
 
 @implementation C2Knight
 
+- (BOOL)canJumpOverOthers;
+{
+	return YES;
+}
+
 @end

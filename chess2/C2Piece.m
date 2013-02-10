@@ -10,4 +10,9 @@
 
 @implementation C2Piece
 
+- (BOOL)canJumpOverOthers;
+{
+	return NO;
+}
+
 @end
