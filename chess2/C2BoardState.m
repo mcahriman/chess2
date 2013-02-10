@@ -13,6 +13,11 @@
 	C2Piece* board[8][8];
 }
 
+- (C2BoardState*)initWithInitialState;
+{
+    return self;
+}
+
 - (C2BoardState*)makeMove:(C2Move*)move;
 {
 	return nil;

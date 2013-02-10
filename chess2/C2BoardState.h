@@ -20,7 +20,7 @@
 /**
  * Create a board in initial state.
  */
-- (void)initWithInitialState;
+- (C2BoardState*)initWithInitialState;
 
 /**
  * Make a move in the current board state.
