@@ -49,6 +49,11 @@
     return self;
 }
 
+- (C2Piece*)pieceAtRank:(int)rank andFile:(int)file;
+{
+    return board[rank][file];
+}
+
 - (C2BoardState*)makeMove:(C2Move*)move;
 {
 	return nil;

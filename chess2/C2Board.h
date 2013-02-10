@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class C2BoardState;
+
 @interface C2Board : UIView
+
+- (void)setState:(C2BoardState*)state;
 
 @end

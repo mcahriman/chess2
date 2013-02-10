@@ -7,6 +7,7 @@
 //
 
 #import "C2ViewController.h"
+#import "C2BoardState.h"
 
 @interface C2ViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	C2BoardState* bs = [[C2BoardState alloc] initWithInitialState];
+    [_board setState:bs];
 }
 
 - (void)didReceiveMemoryWarning

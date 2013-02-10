@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A58C547E16C86051003D785D /* black_rook.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C547D16C86051003D785D /* black_rook.png */; };
 		A5FC3AB016C53DEC00D75225 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AAF16C53DEC00D75225 /* UIKit.framework */; };
 		A5FC3AB216C53DEC00D75225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB116C53DEC00D75225 /* Foundation.framework */; };
 		A5FC3AB416C53DEC00D75225 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB316C53DEC00D75225 /* CoreGraphics.framework */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A58C547D16C86051003D785D /* black_rook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_rook.png; path = images/black_rook.png; sourceTree = "<group>"; };
 		A5FC3AAC16C53DEC00D75225 /* chess2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chess2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FC3AAF16C53DEC00D75225 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5FC3AB116C53DEC00D75225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -195,6 +197,7 @@
 				A5FC3AC116C53DEC00D75225 /* Default.png */,
 				A5FC3AC316C53DEC00D75225 /* Default@2x.png */,
 				A5FC3AC516C53DEC00D75225 /* Default-568h@2x.png */,
+				A58C547D16C86051003D785D /* black_rook.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				A5FC3AC616C53DEC00D75225 /* Default-568h@2x.png in Resources */,
 				A5FC3AC916C53DEC00D75225 /* MainStoryboard_iPhone.storyboard in Resources */,
 				A5FC3ACC16C53DEC00D75225 /* MainStoryboard_iPad.storyboard in Resources */,
+				A58C547E16C86051003D785D /* black_rook.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

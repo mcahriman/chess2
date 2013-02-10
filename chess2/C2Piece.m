@@ -26,4 +26,9 @@
 	return NO;
 }
 
+- (void)drawAt:(CGPoint)location withSize:(CGSize)size;
+{
+    // dummy do-nothing
+}
+
 @end

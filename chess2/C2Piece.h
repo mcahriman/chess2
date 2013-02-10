@@ -36,4 +36,9 @@
  */
 - (BOOL)canJumpOverOthers;
 
+/**
+ * Presentation layer: causes piece to draw it's presentation at the given location in the current UI graphics context.
+ */
+- (void)drawAt:(CGPoint)location withSize:(CGSize)size;
+
 @end

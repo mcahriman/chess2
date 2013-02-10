@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class C2Move;
+@class C2Piece;
 
 //
 // Board state representation.
@@ -33,5 +34,7 @@
  * Takes into account piece movement rules.
  */
 - (BOOL)isLegalMove:(C2Move*)move;
+
+- (C2Piece*)pieceAtRank:(int)rank andFile:(int)file;
 
 @end
