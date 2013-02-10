@@ -7,7 +7,20 @@
 //
 
 #import "C2BoardState.h"
+#import "C2Piece.h"
 
-@implementation C2BoardState
+@implementation C2BoardState {
+	C2Piece* board[8][8];
+}
+
+- (C2BoardState*)makeMove:(C2Move*)move;
+{
+	return nil;
+}
+
+- (BOOL)isLegalMove:(C2Move*)move;
+{
+	return NO;
+}
 
 @end
