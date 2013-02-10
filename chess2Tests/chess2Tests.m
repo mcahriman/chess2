@@ -29,4 +29,25 @@
     STFail(@"Unit tests are not implemented yet in chess2Tests");
 }
 
+- (void)testClassicMovesInInitialBoardState
+{
+	C2BoardState* bs = [[C2BoardState alloc] initWithInitialState];
+	// WHITE
+	// Pawns
+	STAssertTrue([bs isLegalMove:[C2Move from:@"E2" to:@"E4"]]);
+	// Knights
+	// Rooks
+	// Bishops
+	// Queen
+	// King
+	// BLACK
+	// Pawns
+	// Knights
+	// Rooks
+	// Bishops
+	// Queen
+	// King
+}
+
+
 @end

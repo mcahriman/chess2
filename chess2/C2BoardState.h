@@ -18,6 +18,11 @@
 @interface C2BoardState : NSObject
 
 /**
+ * Create a board in initial state.
+ */
+- (void)initWithInitialState;
+
+/**
  * Make a move in the current board state.
  * Returns a new state or nil if the move is not valid.
  */

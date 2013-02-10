@@ -10,7 +10,7 @@
 
 @implementation C2Move
 
-+ (C2Move*)moveFrom:(NSString*)rankAndFileFrom to:(NSString*)rankAndFileTo;
++ (C2Move*)from:(NSString*)rankAndFileFrom to:(NSString*)rankAndFileTo;
 {
 	C2Move* m = [[C2Move alloc] init];
 	m.from = [C2Move rankAndFileTo0x88:rankAndFileFrom];
@@ -20,7 +20,7 @@
 
 + (NSInteger)rankAndFileTo0x88:(NSString*)rankAndFile;
 {
-	
+
 }
 
 @end

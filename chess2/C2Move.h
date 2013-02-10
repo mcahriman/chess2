@@ -19,7 +19,7 @@
 // Construct a 0x88 NSInteger from rankAndFile notation.
 + (NSInteger)rankAndFileTo0x88:(NSString*)rankAndFile;
 
-// Construct a moveFrom:"E2" to:"E4"
-+ (C2Move*)moveFrom:(NSString*)rankAndFile to:(NSString*)rankAndFile;
+// Construct a move from:"E2" to:"E4"
++ (C2Move*)from:(NSString*)rankAndFile to:(NSString*)rankAndFile;
 
 @end
