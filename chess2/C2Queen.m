@@ -10,4 +10,15 @@
 
 @implementation C2Queen
 
+- (C2Piece*)initWithColor:(int)color;
+{
+    self = [super initWithColor:color];
+    if (color == WHITE) {
+        self.image = [UIImage imageNamed:@"white_queen.png"];
+    } else {
+        self.image = [UIImage imageNamed:@"black_queen.png"];
+    }
+    return self;
+}
+
 @end

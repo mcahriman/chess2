@@ -15,6 +15,8 @@
 		A58C548816C86CDA003D785D /* white_pawn.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548616C86CDA003D785D /* white_pawn.png */; };
 		A58C548B16C86F08003D785D /* black_bishop.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548916C86F08003D785D /* black_bishop.png */; };
 		A58C548C16C86F08003D785D /* white_bishop.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548A16C86F08003D785D /* white_bishop.png */; };
+		A58C548F16C8713E003D785D /* black_queen.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548D16C8713E003D785D /* black_queen.png */; };
+		A58C549016C8713E003D785D /* white_queen.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548E16C8713E003D785D /* white_queen.png */; };
 		A5FC3AB016C53DEC00D75225 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AAF16C53DEC00D75225 /* UIKit.framework */; };
 		A5FC3AB216C53DEC00D75225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB116C53DEC00D75225 /* Foundation.framework */; };
 		A5FC3AB416C53DEC00D75225 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB316C53DEC00D75225 /* CoreGraphics.framework */; };
@@ -64,6 +66,8 @@
 		A58C548616C86CDA003D785D /* white_pawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_pawn.png; path = images/white_pawn.png; sourceTree = "<group>"; };
 		A58C548916C86F08003D785D /* black_bishop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_bishop.png; path = images/black_bishop.png; sourceTree = "<group>"; };
 		A58C548A16C86F08003D785D /* white_bishop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_bishop.png; path = images/white_bishop.png; sourceTree = "<group>"; };
+		A58C548D16C8713E003D785D /* black_queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_queen.png; path = images/black_queen.png; sourceTree = "<group>"; };
+		A58C548E16C8713E003D785D /* white_queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_queen.png; path = images/white_queen.png; sourceTree = "<group>"; };
 		A5FC3AAC16C53DEC00D75225 /* chess2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chess2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FC3AAF16C53DEC00D75225 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5FC3AB116C53DEC00D75225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -219,6 +223,8 @@
 				A58C548616C86CDA003D785D /* white_pawn.png */,
 				A58C548916C86F08003D785D /* black_bishop.png */,
 				A58C548A16C86F08003D785D /* white_bishop.png */,
+				A58C548D16C8713E003D785D /* black_queen.png */,
+				A58C548E16C8713E003D785D /* white_queen.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -328,6 +334,8 @@
 				A58C548816C86CDA003D785D /* white_pawn.png in Resources */,
 				A58C548B16C86F08003D785D /* black_bishop.png in Resources */,
 				A58C548C16C86F08003D785D /* white_bishop.png in Resources */,
+				A58C548F16C8713E003D785D /* black_queen.png in Resources */,
+				A58C549016C8713E003D785D /* white_queen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
