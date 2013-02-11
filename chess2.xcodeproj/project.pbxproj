@@ -17,6 +17,8 @@
 		A58C548C16C86F08003D785D /* white_bishop.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548A16C86F08003D785D /* white_bishop.png */; };
 		A58C548F16C8713E003D785D /* black_queen.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548D16C8713E003D785D /* black_queen.png */; };
 		A58C549016C8713E003D785D /* white_queen.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548E16C8713E003D785D /* white_queen.png */; };
+		A58C549316C8735D003D785D /* black_king.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C549116C8735D003D785D /* black_king.png */; };
+		A58C549416C8735D003D785D /* white_king.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C549216C8735D003D785D /* white_king.png */; };
 		A5FC3AB016C53DEC00D75225 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AAF16C53DEC00D75225 /* UIKit.framework */; };
 		A5FC3AB216C53DEC00D75225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB116C53DEC00D75225 /* Foundation.framework */; };
 		A5FC3AB416C53DEC00D75225 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB316C53DEC00D75225 /* CoreGraphics.framework */; };
@@ -68,6 +70,8 @@
 		A58C548A16C86F08003D785D /* white_bishop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_bishop.png; path = images/white_bishop.png; sourceTree = "<group>"; };
 		A58C548D16C8713E003D785D /* black_queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_queen.png; path = images/black_queen.png; sourceTree = "<group>"; };
 		A58C548E16C8713E003D785D /* white_queen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_queen.png; path = images/white_queen.png; sourceTree = "<group>"; };
+		A58C549116C8735D003D785D /* black_king.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_king.png; path = images/black_king.png; sourceTree = "<group>"; };
+		A58C549216C8735D003D785D /* white_king.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_king.png; path = images/white_king.png; sourceTree = "<group>"; };
 		A5FC3AAC16C53DEC00D75225 /* chess2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chess2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FC3AAF16C53DEC00D75225 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5FC3AB116C53DEC00D75225 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -225,6 +229,8 @@
 				A58C548A16C86F08003D785D /* white_bishop.png */,
 				A58C548D16C8713E003D785D /* black_queen.png */,
 				A58C548E16C8713E003D785D /* white_queen.png */,
+				A58C549116C8735D003D785D /* black_king.png */,
+				A58C549216C8735D003D785D /* white_king.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -336,6 +342,8 @@
 				A58C548C16C86F08003D785D /* white_bishop.png in Resources */,
 				A58C548F16C8713E003D785D /* black_queen.png in Resources */,
 				A58C549016C8713E003D785D /* white_queen.png in Resources */,
+				A58C549316C8735D003D785D /* black_king.png in Resources */,
+				A58C549416C8735D003D785D /* white_king.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
