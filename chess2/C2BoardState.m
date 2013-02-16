@@ -7,61 +7,49 @@
 //
 
 #import "C2BoardState.h"
-#import "C2Piece.h"
-#import "C2Empty.h"
-#import "C2Pawn.h"
-#import "C2Rook.h"
-#import "C2Knight.h"
-#import "C2Bishop.h"
-#import "C2Queen.h"
-#import "C2King.h"
 
-@implementation C2BoardState {
-	C2Piece* board[8][8];
+static Square_t initialBoardState [8][8] =
+{
+    {{ROOK, WHITE, NO}, {KNIGHT, WHITE, NO}, {BISHOP, WHITE, NO}, {QUEEN, WHITE, NO}, {KING, WHITE, NO}, {BISHOP, WHITE, NO}, {KNIGHT, WHITE, NO}, {ROOK, WHITE, NO}},
+    {{PAWN, WHITE, NO}, {PAWN, WHITE, NO}, {PAWN, WHITE, NO}, {PAWN, WHITE, NO}, {PAWN, WHITE, NO}, {PAWN, WHITE, NO}, {PAWN, WHITE, NO}, {PAWN, WHITE, NO}},
+    {{0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}},
+    {{0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}},
+    {{0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}},
+    {{0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}, {0, 0, NO}},
+    {{PAWN, BLACK, NO}, {PAWN, BLACK, NO}, {PAWN, BLACK, NO}, {PAWN, BLACK, NO}, {PAWN, BLACK, NO}, {PAWN, BLACK, NO}, {PAWN, BLACK, NO}, {PAWN, BLACK, NO}},
+    {{ROOK, BLACK, NO}, {KNIGHT, BLACK, NO}, {BISHOP, BLACK, NO}, {QUEEN, BLACK, NO}, {KING, BLACK, NO}, {BISHOP, BLACK, NO}, {KNIGHT, BLACK, NO}, {ROOK, BLACK, NO}}
+};
+
+@implementation C2BoardState
+{
+	Square_t board [8][8];
+    BOOL     targets [8][8];
 }
 
 - (C2BoardState*)initWithInitialState;
 {
-	board[0][0] = board[0][7] = [[C2Rook alloc] initWithColor:WHITE];
-	board[0][1] = board[0][6] = [[C2Knight alloc] initWithColor:WHITE];
-	board[0][2] = board[0][5] = [[C2Bishop alloc] initWithColor:WHITE];
-	board[0][3] = [[C2Queen alloc] initWithColor:WHITE];
-	board[0][4] = [[C2King alloc] initWithColor:WHITE];
-	for (int file = 0; file < 8; ++file) {
-		board[1][file] = [[C2Pawn alloc] initWithColor:WHITE];
-	}
-
-	board[7][0] = board[7][7] = [[C2Rook alloc] initWithColor:BLACK];
-	board[7][1] = board[7][6] = [[C2Knight alloc] initWithColor:BLACK];
-	board[7][2] = board[7][5] = [[C2Bishop alloc] initWithColor:BLACK];
-	board[7][3] = [[C2Queen alloc] initWithColor:BLACK];
-	board[7][4] = [[C2King alloc] initWithColor:BLACK];
-	for (int file = 0; file < 8; ++file) {
-		board[6][file] = [[C2Pawn alloc] initWithColor:BLACK];
-	}
-
-	for (int rank = 2; rank < 6; ++rank) {
-		for (int file = 0; file < 8; ++file) {
-			board[rank][file] = [[C2Empty alloc] init];
-		}
-	}
-
+	memcpy (board, initialBoardState, sizeof (board));
+    memset (targets, 0, sizeof (targets));
+    
     return self;
 }
 
-- (C2Piece*)pieceAtRank:(int)rank andFile:(int)file;
+- (NSInteger)pieceAtRank:(NSInteger)rank andFile:(NSInteger)file;
 {
-    return board[rank][file];
+    assert((rank >= 0) && (rank <= 7));
+    assert((file >= 0) && (file <= 7));
+    
+    return (board [rank][file].piece | board [rank][file].color);
 }
 
-- (C2BoardState*)makeMove:(C2Move*)move;
+- (BOOL)moveTargetAtRank:(NSInteger)rank andFile:(NSInteger)file;
 {
-	return nil;
+    return NO;
 }
 
-- (BOOL)isLegalMove:(C2Move*)move;
+- (void)selectAtRank:(NSInteger)rank andFile:(NSInteger)file;
 {
-	return NO;
+    
 }
 
 @end

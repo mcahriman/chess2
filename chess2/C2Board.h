@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "C2BoardState.h"
 
 @class C2BoardState;
 
 @interface C2Board : UIView
 
 - (void)setState:(C2BoardState*)state;
+
+- (void)drawPiece:(Piece_t)piece atPoint:(CGPoint)point withSize:(CGSize)size;
 
 @end

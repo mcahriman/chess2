@@ -36,17 +36,8 @@
 		A5FC3AD916C53DED00D75225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC3AB116C53DEC00D75225 /* Foundation.framework */; };
 		A5FC3AE116C53DED00D75225 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5FC3ADF16C53DED00D75225 /* InfoPlist.strings */; };
 		A5FC3AE416C53DED00D75225 /* chess2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AE316C53DED00D75225 /* chess2Tests.m */; };
-		A5FC3AEF16C53EEA00D75225 /* C2Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AEE16C53EE900D75225 /* C2Piece.m */; };
 		A5FC3AF216C53F2700D75225 /* C2BoardState.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AF116C53F2700D75225 /* C2BoardState.m */; };
-		A5FC3AF516C53F8600D75225 /* C2Move.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AF416C53F8600D75225 /* C2Move.m */; };
-		A5FC3AF816C5419700D75225 /* C2Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AF716C5419600D75225 /* C2Knight.m */; };
 		A5FC3AFB16C812D100D75225 /* C2Board.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AFA16C812D100D75225 /* C2Board.m */; };
-		A5FC3AFE16C8180200D75225 /* C2Rook.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3AFD16C8180200D75225 /* C2Rook.m */; };
-		A5FC3B0116C8181600D75225 /* C2Bishop.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3B0016C8181600D75225 /* C2Bishop.m */; };
-		A5FC3B0416C8182400D75225 /* C2Queen.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3B0316C8182400D75225 /* C2Queen.m */; };
-		A5FC3B0716C8183100D75225 /* C2King.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3B0616C8183100D75225 /* C2King.m */; };
-		A5FC3B0A16C8184E00D75225 /* C2Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3B0916C8184E00D75225 /* C2Empty.m */; };
-		A5FC3B0D16C8187D00D75225 /* C2Pawn.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FC3B0C16C8187D00D75225 /* C2Pawn.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,28 +86,10 @@
 		A5FC3AE016C53DED00D75225 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5FC3AE216C53DED00D75225 /* chess2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chess2Tests.h; sourceTree = "<group>"; };
 		A5FC3AE316C53DED00D75225 /* chess2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chess2Tests.m; sourceTree = "<group>"; };
-		A5FC3AED16C53EE900D75225 /* C2Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Piece.h; sourceTree = "<group>"; };
-		A5FC3AEE16C53EE900D75225 /* C2Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Piece.m; sourceTree = "<group>"; };
 		A5FC3AF016C53F2700D75225 /* C2BoardState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2BoardState.h; sourceTree = "<group>"; };
 		A5FC3AF116C53F2700D75225 /* C2BoardState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2BoardState.m; sourceTree = "<group>"; };
-		A5FC3AF316C53F8600D75225 /* C2Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Move.h; sourceTree = "<group>"; };
-		A5FC3AF416C53F8600D75225 /* C2Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Move.m; sourceTree = "<group>"; };
-		A5FC3AF616C5419600D75225 /* C2Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Knight.h; sourceTree = "<group>"; };
-		A5FC3AF716C5419600D75225 /* C2Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Knight.m; sourceTree = "<group>"; };
 		A5FC3AF916C812D100D75225 /* C2Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Board.h; sourceTree = "<group>"; };
 		A5FC3AFA16C812D100D75225 /* C2Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Board.m; sourceTree = "<group>"; };
-		A5FC3AFC16C8180100D75225 /* C2Rook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Rook.h; sourceTree = "<group>"; };
-		A5FC3AFD16C8180200D75225 /* C2Rook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Rook.m; sourceTree = "<group>"; };
-		A5FC3AFF16C8181600D75225 /* C2Bishop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Bishop.h; sourceTree = "<group>"; };
-		A5FC3B0016C8181600D75225 /* C2Bishop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Bishop.m; sourceTree = "<group>"; };
-		A5FC3B0216C8182400D75225 /* C2Queen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Queen.h; sourceTree = "<group>"; };
-		A5FC3B0316C8182400D75225 /* C2Queen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Queen.m; sourceTree = "<group>"; };
-		A5FC3B0516C8183000D75225 /* C2King.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2King.h; sourceTree = "<group>"; };
-		A5FC3B0616C8183100D75225 /* C2King.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2King.m; sourceTree = "<group>"; };
-		A5FC3B0816C8184E00D75225 /* C2Empty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Empty.h; sourceTree = "<group>"; };
-		A5FC3B0916C8184E00D75225 /* C2Empty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Empty.m; sourceTree = "<group>"; };
-		A5FC3B0B16C8187D00D75225 /* C2Pawn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2Pawn.h; sourceTree = "<group>"; };
-		A5FC3B0C16C8187D00D75225 /* C2Pawn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2Pawn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,28 +151,10 @@
 			children = (
 				A5FC3AF016C53F2700D75225 /* C2BoardState.h */,
 				A5FC3AF116C53F2700D75225 /* C2BoardState.m */,
-				A5FC3AF316C53F8600D75225 /* C2Move.h */,
-				A5FC3AF416C53F8600D75225 /* C2Move.m */,
-				A5FC3AED16C53EE900D75225 /* C2Piece.h */,
-				A5FC3AEE16C53EE900D75225 /* C2Piece.m */,
-				A5FC3AF616C5419600D75225 /* C2Knight.h */,
-				A5FC3AF716C5419600D75225 /* C2Knight.m */,
 				A5FC3ABE16C53DEC00D75225 /* C2AppDelegate.h */,
 				A5FC3ABF16C53DEC00D75225 /* C2AppDelegate.m */,
 				A5FC3AF916C812D100D75225 /* C2Board.h */,
 				A5FC3AFA16C812D100D75225 /* C2Board.m */,
-				A5FC3AFC16C8180100D75225 /* C2Rook.h */,
-				A5FC3AFD16C8180200D75225 /* C2Rook.m */,
-				A5FC3AFF16C8181600D75225 /* C2Bishop.h */,
-				A5FC3B0016C8181600D75225 /* C2Bishop.m */,
-				A5FC3B0216C8182400D75225 /* C2Queen.h */,
-				A5FC3B0316C8182400D75225 /* C2Queen.m */,
-				A5FC3B0516C8183000D75225 /* C2King.h */,
-				A5FC3B0616C8183100D75225 /* C2King.m */,
-				A5FC3B0816C8184E00D75225 /* C2Empty.h */,
-				A5FC3B0916C8184E00D75225 /* C2Empty.m */,
-				A5FC3B0B16C8187D00D75225 /* C2Pawn.h */,
-				A5FC3B0C16C8187D00D75225 /* C2Pawn.m */,
 				A5FC3ACD16C53DEC00D75225 /* C2ViewController.h */,
 				A5FC3ACE16C53DEC00D75225 /* C2ViewController.m */,
 				A5FC3AC716C53DEC00D75225 /* MainStoryboard_iPhone.storyboard */,
@@ -381,17 +336,8 @@
 				A5FC3ABC16C53DEC00D75225 /* main.m in Sources */,
 				A5FC3AC016C53DEC00D75225 /* C2AppDelegate.m in Sources */,
 				A5FC3ACF16C53DEC00D75225 /* C2ViewController.m in Sources */,
-				A5FC3AEF16C53EEA00D75225 /* C2Piece.m in Sources */,
 				A5FC3AF216C53F2700D75225 /* C2BoardState.m in Sources */,
-				A5FC3AF516C53F8600D75225 /* C2Move.m in Sources */,
-				A5FC3AF816C5419700D75225 /* C2Knight.m in Sources */,
 				A5FC3AFB16C812D100D75225 /* C2Board.m in Sources */,
-				A5FC3AFE16C8180200D75225 /* C2Rook.m in Sources */,
-				A5FC3B0116C8181600D75225 /* C2Bishop.m in Sources */,
-				A5FC3B0416C8182400D75225 /* C2Queen.m in Sources */,
-				A5FC3B0716C8183100D75225 /* C2King.m in Sources */,
-				A5FC3B0A16C8184E00D75225 /* C2Empty.m in Sources */,
-				A5FC3B0D16C8187D00D75225 /* C2Pawn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

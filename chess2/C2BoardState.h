@@ -8,8 +8,29 @@
 
 #import <Foundation/Foundation.h>
 
-@class C2Move;
-@class C2Piece;
+typedef enum
+{
+    NONE   = 0x00,
+    PAWN   = 0x01,
+    KNIGHT = 0x02,
+    BISHOP = 0x03,
+    ROOK   = 0x04,
+    QUEEN  = 0x05,
+    KING   = 0x06
+} Piece_t;
+
+typedef enum
+{
+    BLACK = 0x00,
+    WHITE = 0x10
+} Piece_color_t;
+
+typedef struct
+{
+    Piece_t       piece;
+    Piece_color_t color;
+    BOOL          moved;
+} Square_t;
 
 //
 // Board state representation.
@@ -23,18 +44,10 @@
  */
 - (C2BoardState*)initWithInitialState;
 
-/**
- * Make a move in the current board state.
- * Returns a new state or nil if the move is not valid.
- */
-- (C2BoardState*)makeMove:(C2Move*)move;
+- (NSInteger)pieceAtRank:(NSInteger)rank andFile:(NSInteger)file;
 
-/**
- * Check if the move is valid in current board position.
- * Takes into account piece movement rules.
- */
-- (BOOL)isLegalMove:(C2Move*)move;
+- (BOOL)moveTargetAtRank:(NSInteger)rank andFile:(NSInteger)file;
 
-- (C2Piece*)pieceAtRank:(int)rank andFile:(int)file;
+- (void)selectAtRank:(NSInteger)rank andFile:(NSInteger)file;
 
 @end
