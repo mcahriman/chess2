@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661267AF16D11ED60011B0E2 /* board_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 661267AB16D11ED60011B0E2 /* board_ipad.png */; };
+		661267B016D11ED60011B0E2 /* board_ipad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 661267AC16D11ED60011B0E2 /* board_ipad@2x.png */; };
+		661267B116D11ED60011B0E2 /* board_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 661267AD16D11ED60011B0E2 /* board_iphone.png */; };
+		661267B216D11ED60011B0E2 /* board_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 661267AE16D11ED60011B0E2 /* board_iphone@2x.png */; };
 		A58C547E16C86051003D785D /* black_rook.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C547D16C86051003D785D /* black_rook.png */; };
 		A58C548016C867DF003D785D /* white_rook.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C547F16C867DF003D785D /* white_rook.png */; };
 		A58C548316C86B03003D785D /* black_knight.png in Resources */ = {isa = PBXBuildFile; fileRef = A58C548116C86B03003D785D /* black_knight.png */; };
@@ -51,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661267AB16D11ED60011B0E2 /* board_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board_ipad.png; sourceTree = "<group>"; };
+		661267AC16D11ED60011B0E2 /* board_ipad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "board_ipad@2x.png"; sourceTree = "<group>"; };
+		661267AD16D11ED60011B0E2 /* board_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board_iphone.png; sourceTree = "<group>"; };
+		661267AE16D11ED60011B0E2 /* board_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "board_iphone@2x.png"; sourceTree = "<group>"; };
 		A58C547D16C86051003D785D /* black_rook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_rook.png; path = images/black_rook.png; sourceTree = "<group>"; };
 		A58C547F16C867DF003D785D /* white_rook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_rook.png; path = images/white_rook.png; sourceTree = "<group>"; };
 		A58C548116C86B03003D785D /* black_knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = black_knight.png; path = images/black_knight.png; sourceTree = "<group>"; };
@@ -167,6 +175,10 @@
 		A5FC3AB616C53DEC00D75225 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				661267AB16D11ED60011B0E2 /* board_ipad.png */,
+				661267AC16D11ED60011B0E2 /* board_ipad@2x.png */,
+				661267AD16D11ED60011B0E2 /* board_iphone.png */,
+				661267AE16D11ED60011B0E2 /* board_iphone@2x.png */,
 				A5FC3AB716C53DEC00D75225 /* chess2-Info.plist */,
 				A5FC3AB816C53DEC00D75225 /* InfoPlist.strings */,
 				A5FC3ABB16C53DEC00D75225 /* main.m */,
@@ -299,6 +311,10 @@
 				A58C549016C8713E003D785D /* white_queen.png in Resources */,
 				A58C549316C8735D003D785D /* black_king.png in Resources */,
 				A58C549416C8735D003D785D /* white_king.png in Resources */,
+				661267AF16D11ED60011B0E2 /* board_ipad.png in Resources */,
+				661267B016D11ED60011B0E2 /* board_ipad@2x.png in Resources */,
+				661267B116D11ED60011B0E2 /* board_iphone.png in Resources */,
+				661267B216D11ED60011B0E2 /* board_iphone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
