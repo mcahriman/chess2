@@ -8,9 +8,13 @@
         <scene sceneID="Vno-bd-eQQ">
             <objects>
                 <navigationController definesPresentationContext="YES" id="BCG-zS-Jxd" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="le5-R5-EI3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="le5-R5-EI3">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="j1P-WI-eme">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="U4o-6G-MjV"/>
                     </connections>
@@ -35,7 +39,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="cOq-E5-iKh" secondAttribute="trailing" constant="6" type="user" id="JsI-dd-Yr7"/>
                             <constraint firstItem="cOq-E5-iKh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="6" type="user" id="TPg-yz-UmG"/>
