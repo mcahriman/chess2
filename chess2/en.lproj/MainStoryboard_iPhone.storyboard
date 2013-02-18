@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-665" y="43"/>
         </scene>
-        <!--View Controller - Game with-->
+        <!--View Controller - Game with chuchundra-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="C2ViewController" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                             <constraint firstItem="cOq-E5-iKh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="6" type="user" id="ujk-pJ-2o7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Game with" id="c0E-TJ-ZxR"/>
+                    <navigationItem key="navigationItem" title="Game with chuchundra" id="c0E-TJ-ZxR"/>
                     <connections>
                         <outlet property="board" destination="cOq-E5-iKh" id="1oZ-mP-AmQ"/>
                     </connections>
