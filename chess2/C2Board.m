@@ -83,12 +83,45 @@
     // Divide rect into 8x8 subrects
     CGFloat width = (CGRectGetMaxX(rect) - CGRectGetMinX(rect) - 2*LEFT_OFFSET)/8.0;
     CGFloat height = (CGRectGetMaxY(rect) - CGRectGetMinY(rect) - 2*TOP_OFFSET)/8.0;
-    CGFloat startX = CGRectGetMinX(rect) + LEFT_OFFSET;
-    CGFloat startY = CGRectGetMinY(rect) + TOP_OFFSET;
+    CGFloat startX = CGRectGetMinX(rect);
+    CGFloat endX = CGRectGetMaxX(rect) - LEFT_OFFSET;
+    CGFloat startY = CGRectGetMinY(rect);
+    CGFloat endY = CGRectGetMaxY(rect) - TOP_OFFSET;
     
     // Draw the board (only in one orientation atm).
     [boardImage drawInRect:rect];
     
+    // Draw board text labels, rank and file.
+    UIFont* font = [UIFont fontWithName:@"Arial" size:14.0];
+
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(context);
+    CGContextClipToRect(context, rect);
+
+    CGContextSetTextDrawingMode(context, kCGTextFill);
+    CGContextSetRGBFillColor(context, /*R*/0.7, /*G*/0.7, /*B*/0.7, /*A*/0.7);
+
+    for (int rank = 0; rank < 8; ++rank)
+    {
+        NSString* ranks = [NSString stringWithFormat:@"%d", rank+1];
+        CGSize dim = [ranks sizeWithFont:font];
+        CGPoint locl = CGPointMake(startX + (LEFT_OFFSET - dim.width)/2, startY + TOP_OFFSET + dim.height/2 + height * rank);
+        CGPoint locr = CGPointMake(endX   + (LEFT_OFFSET - dim.width)/2, startY + TOP_OFFSET + dim.height/2 + height * rank);
+        [ranks drawAtPoint:locl withFont:font];
+        [ranks drawAtPoint:locr withFont:font];
+    }
+    for (int file = 0; file < 8; ++ file)
+    {
+        NSString* files = [NSString stringWithFormat:@"%c", "hgfedcba"[file]];
+        CGSize dim = [files sizeWithFont:font];
+        CGPoint loct = CGPointMake(startX + LEFT_OFFSET + (width - dim.width)/2 + width * file, startY + (TOP_OFFSET - dim.height)/2);
+        CGPoint locb = CGPointMake(startX + LEFT_OFFSET + (width - dim.width)/2 + width * file, endY   + (TOP_OFFSET - dim.height)/2);
+        [files drawAtPoint:loct withFont:font];
+        [files drawAtPoint:locb withFont:font];
+    }
+
+    CGContextRestoreGState(context);
+
     // Draw the pieces.
     if (!self->board)
         return;
@@ -97,7 +130,7 @@
     {
         for (int file = 0; file < 8; ++ file)
         {
-            CGPoint p = CGPointMake(startX + width * file, startY + height * rank);
+            CGPoint p = CGPointMake(startX + LEFT_OFFSET + width * file, startY + TOP_OFFSET + height * rank);
             CGSize s = CGSizeMake(width, height);
             
             [self drawPiece:[board pieceAtRank:rank andFile:file] atPoint:p withSize:s];
