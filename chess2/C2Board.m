@@ -79,7 +79,7 @@
 {
     if (piece)
     {
-        UIImage *image = [pieceImages objectForKey:[NSNumber numberWithUnsignedInt:piece]];
+        UIImage *image = [pieceImages objectForKey:@(piece)];
         CGRect rect = {point, size};
         
         assert(image != nil);
