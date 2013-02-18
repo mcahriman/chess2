@@ -14,6 +14,9 @@
     C2BoardState *board;
     UIImage      *boardImage;
     NSDictionary *pieceImages;
+    int           TOP_OFFSET;
+    int           LEFT_OFFSET;
+    CGFloat       FONT_SIZE;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -48,7 +51,20 @@
                        [UIImage imageNamed:@"black_queen.png"],  @(QUEEN | BLACK),
                        [UIImage imageNamed:@"black_king.png"],   @(KING | BLACK),
                        nil];
-        boardImage = [UIImage imageNamed:@"board_iphone.png"];
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
+        {
+            boardImage = [UIImage imageNamed:@"board_iphone.png"];
+            TOP_OFFSET = 21;
+            LEFT_OFFSET = 21;
+            FONT_SIZE = 14.0;
+        }
+        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+        {
+            boardImage = [UIImage imageNamed:@"board_ipad.png"];
+            TOP_OFFSET = 50;
+            LEFT_OFFSET = 50;
+            FONT_SIZE = 21.0;
+        }
     }
     
     return self;
@@ -56,7 +72,7 @@
 
 - (void)setState:(C2BoardState*)state;
 {
-    self->board = state;
+    board = state;
 }
 
 - (void)drawPiece:(Piece_t)piece atPoint:(CGPoint)point withSize:(CGSize)size;
@@ -71,10 +87,6 @@
         [image drawInRect:rect];
     }
 }
-
-// @Fixme: this depends on the device metrics
-#define TOP_OFFSET 21
-#define LEFT_OFFSET 21
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -92,7 +104,7 @@
     [boardImage drawInRect:rect];
     
     // Draw board text labels, rank and file.
-    UIFont* font = [UIFont fontWithName:@"Arial" size:14.0];
+    UIFont* font = [UIFont fontWithName:@"Arial" size:FONT_SIZE];
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
@@ -123,7 +135,7 @@
     CGContextRestoreGState(context);
 
     // Draw the pieces.
-    if (!self->board)
+    if (!board)
         return;
 
     for (int rank = 0; rank < 8; ++rank)

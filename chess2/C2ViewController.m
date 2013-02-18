@@ -15,6 +15,8 @@
 
 @implementation C2ViewController
 
+@synthesize board = _board;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
