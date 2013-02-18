@@ -104,7 +104,7 @@
     [boardImage drawInRect:rect];
     
     // Draw board text labels, rank and file.
-    UIFont* font = [UIFont systemFontWithSize:FONT_SIZE];
+    UIFont* font = [UIFont systemFontOfSize:FONT_SIZE];
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
